@@ -1,0 +1,36 @@
+# ╔══════════════════════════════════════════════════════╗
+# ║              AdminTools  Configuration               ║
+# ╚══════════════════════════════════════════════════════╝
+# Full documentation: /admintools help
+# Reload with: /admintools reload
+
+# ── Permissions ─────────────────────────────────────────
+# Controls who can use each command.
+# Values:
+#   op          → only server operators (default)
+#   all         → every player, no permission needed
+#   <node>      → any custom permission node, e.g. "myplugin.admin"
+permissions:
+  invsee:      op
+  ecsee:       op
+  vanish:      op
+  fakeplayer:  op
+  admintools:  op
+
+# ── FakePlayer ──────────────────────────────────────────
+fakeplayer:
+  # Show fake players as entries in the tab list.
+  # Disable if you only want the join/leave message effect.
+  show-in-tab: true
+
+# ── InvSee ──────────────────────────────────────────────
+invsee:
+  # Allow admins to move/add/remove items in the InvSee GUI.
+  # When false the GUI is read-only (all clicks cancelled).
+  editable: true
+
+# ── EnderChest ──────────────────────────────────────────
+ecsee:
+  # Allow admins to move/add/remove items in the EnderChest GUI.
+  # When false the GUI is read-only.
+  editable: true
